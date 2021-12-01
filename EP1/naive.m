@@ -104,6 +104,7 @@ function [ind v ] = simplex_ing_intern(A,b,c,m,n,x,indB, iteracao)
     endif
 endfunction
 
+% EXEMPLO 1
 % b = [20 20 20];
 % c = [-10  -12 -12 0 0 0];
 % A = [ [1; 2; 3] [2; 1; 2] [2; 2; 4] [1; 0; 0] [0; 1; 0] [0; 0; 1] ];
@@ -112,6 +113,7 @@ endfunction
 % x = [0, 0, 0, 20, 20, 20];
 % indB = [4, 5, 6];
 
+% EXEMPLO 2
 % b = [20 20 20];
 % c = [-10  -12 -12 0 0 0];
 % A = [ [1; 2; 2] [2; 1; 2] [2; 2; 1] [1; 0; 0] [0; 1; 0] [0; 0; 1] ];
@@ -120,6 +122,7 @@ endfunction
 % x = [0, 0, 0, 20, 20, 20];
 % indB = [4, 5, 6];
 
+% EXEMPLO 3
 % b = [15 120 100];
 % c = [-4  -5 -9 -11 0 0 0];
 % A = [ [1; 7; 3] [1; 5; 5] [1; 3; 10] [1; 2; 15] [1; 0; 0] [0; 1; 0] [0; 0; 1] ];
@@ -128,6 +131,7 @@ endfunction
 % x = [0, 0, 0, 0, 15, 120, 100];
 % indB = [5, 6, 7];
 
+% EXEMPLO 4
 % b = [10 3];
 % c = [4  5  1 -1];
 % A = [ [1; 0] [2; 1] [0; 1] [1; 1] ];
@@ -136,13 +140,15 @@ endfunction
 % x = [4 3 0 0];
 % indB = [1 2];
 
-% inf
-b = [10 3];
-c = [4  5  1 -1 -1];
-A = [ [1; 0] [2; 1] [0; 1] [1; 1] [0; 0] ];
-m = 2;
-n = 5;
-x = [4 3 0 0 0];
-indB = [1 2];
+% EXEMPLO 4
+% solucao ilimitada
+% b = [10 3];
+% c = [4  5  1 -1 -1];
+% A = [ [1; 0] [2; 1] [0; 1] [1; 1] [0; 0] ];
+% m = 2;
+% n = 5;
+% x = [4 3 0 0 0];
+% indB = [1 2];
 
+% Para executar um exemplo, descomente a secao do exemplo a sua escolha e execute o arquivo
 simplex_ing(A,b,c,m,n,x,indB)
